@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NavTik - Portfolio</title>
+  <link rel="icon" href="NavTik Icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" style="height:48px;">
+    <div class="header-container" style="height:100%; display:flex; align-items:center; justify-content:flex-start; gap:12px; padding:0 12px; width:100%;">
+      <nav class="nav-links" style="display:flex; align-items:center; gap:6px;">
+        <a href="home.html" class="nav-linka" style="text-decoration:none;">
+          <div class="feature-card" style="display:inline-flex; align-items:center; justify-content:center; padding:6px 12px; height:32px; border-radius:999px;">
+            <span style="font-size:0.9em; font-weight:600;">Home</span>
+          </div>
+        </a>
+
+        <a href="portofolio.html" class="nav-linka" style="text-decoration:none;">
+          <div class="feature-card" style="display:inline-flex; align-items:center; justify-content:center; padding:6px 12px; height:32px; border-radius:999px;">
+            <span style="font-size:0.9em; font-weight:600;">Portfolio</span>
+          </div>
+        </a>
+
+        <a href="fflags.html" class="nav-linka" style="text-decoration:none;">
+          <div class="feature-card" style="display:inline-flex; align-items:center; justify-content:center; padding:6px 12px; height:32px; border-radius:999px;">
+            <span style="font-size:0.9em; font-weight:600;">FastFlags</span>
+          </div>
+        </a>
+      </nav>
+
+      <div style="margin-left:auto; display:flex; align-items:center; gap:12px;">
+        <div class="logo" style="font-weight:800; font-size:1rem; display:flex; align-items:center; gap:8px;">
+          NavTik
+          <img src="verification.svg" alt="icon" class="verified-icon-vertical-features-cards" style="width:18px; height:18px;">
+        </div>
+
+        <button class="hamburger" id="hamburger" style="font-size:18px; background:none; border:none; height:32px; display:flex; align-items:center;">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="feature-card" style="display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px; margin:12px;">
+    <a href="home.html" style="text-decoration:none; color:inherit; font-weight:600;">Home</a>
+    ×
+    <span style="font-weight:600;">Portfolio</span>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-card">
+      <h1 class="site-title">Portfolio</h1>
+      <hr>
+      <div class="feature-card">
+        <a href="home.html" class="nav-linka">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="card-list-vertical" id="BasicHelp">
+    <div class="feature-card">
+      <h3>Produced By</h3>
+      <p>This site was produced by <b>chrxzrbx</b> and <b>xyloxiis</b>.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Contact Us</h3>
+      <img 
+        src="https://i.pinimg.com/originals/85/e9/d7/85e9d74f125bb82aa4be2478ce02bbd4.jpg" 
+        alt="abstract blue and red design" 
+        class="inline-image"
+        draggable="false"
+        style="height: 30px; vertical-align: middle;" /> 
+      <span>.gg/9bXZAqYuqW or voidx64, xyloxiis</span>
+    </div>
+
+    <div class="feature-card">
+      <h3>Email Us:</h3>
+      <p>navtik.co@gmail.com</p>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
